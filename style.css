@@ -1,0 +1,12 @@
+.card{
+    border: 1px solid black;
+    margin: 50px;
+}
+
+.card #xhr-1 {
+    background-color: aqua;
+}
+
+.card #xhr-2 {
+    background-color: blueviolet;
+}
