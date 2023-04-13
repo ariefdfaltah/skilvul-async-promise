@@ -10,3 +10,7 @@
 .card #xhr-2 {
     background-color: blueviolet;
 }
+
+#navigation {
+    visibility: hidden;
+}

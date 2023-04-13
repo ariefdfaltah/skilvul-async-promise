@@ -1,4 +1,4 @@
-export function domManipulation() {
+export function getExample() {
     const log = document.querySelector('.event-log');
     
     document.querySelector('#xhr-1').addEventListener('click', () => {
@@ -16,6 +16,6 @@ export function domManipulation() {
 
     document.querySelector('#reload-1').addEventListener('click', () => {
         log.textContent = '';
-        document.location.reload();
+        // document.location.reload();
     });
 }
