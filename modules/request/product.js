@@ -7,6 +7,8 @@ export function getProduct() {
     document.querySelector('#xhr-2').addEventListener('click', () => {
         result.textContent = '';
 
+    let navigation = "hidden"
+
     const xhr = new XMLHttpRequest();
 
     xhr.addEventListener('loadend', () => {
@@ -19,7 +21,7 @@ export function getProduct() {
             productNames.push(responseJSON[i].name)
         }
         result.innerHTML = `<ul>${addedHTML}</ul>`
-        navigationController(true)
+        navigationController(navigation)
 
         document.querySelector('#sorting-asc').addEventListener('click', () => {
             productNames = sorting_asc(productNames)
