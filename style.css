@@ -11,6 +11,10 @@
     background-color: blueviolet;
 }
 
+.card #xhr-3 {
+    background-color: greenyellow;
+}
+
 #navigation {
     visibility: hidden;
 }
