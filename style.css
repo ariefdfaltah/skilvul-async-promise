@@ -15,6 +15,10 @@
     background-color: greenyellow;
 }
 
+.card #xhr-4 {
+    background-color: rgb(241, 106, 126);
+}
+
 #navigation {
     visibility: hidden;
 }
