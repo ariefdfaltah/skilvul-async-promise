@@ -47,8 +47,10 @@ function onClickReset(result) {
 
 function parseResponse(responseJSON, email, password) {
     for (let i=0; i<responseJSON.length; i++) {
-        if (responseJSON[i].email == email && responseJSON[i].password == password)
-        return "LOGIN SUCCESS"
+        if (responseJSON[i].email == email && responseJSON[i].password == password) {
+            localStorage.setItem("LoginStatus", true)
+            return "LOGIN SUCCESS"
+        }
     }
     return "LOGIN FAILED"
 }

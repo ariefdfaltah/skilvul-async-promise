@@ -1,5 +1,4 @@
 export function getPokemonAsyncAwait() {
-    console.log("masuk 1")
 
     //Mengambil element dengan id xhr-3-result
     const result = document.querySelector("#xhr-4-result")

@@ -13,3 +13,13 @@ getProduct()
 getPokemon()
 getPokemonAsyncAwait()
 login()
+
+let loginStatus = localStorage.getItem("LoginStatus")
+if (loginStatus == null) {
+    const result = document.querySelector("#banner-5")
+    result.innerHTML = `<h1>Silahkan Login</h1>`
+} else {
+    const result = document.querySelector("#banner-5")
+    result.innerHTML = `<h1>Anda Telah Login</h1>`
+}
+
